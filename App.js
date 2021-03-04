@@ -6,6 +6,8 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContacScreen';
+import PantaloneScreen from './screens/PantaloneScreen';
+import CamisasScreen from './screens/CamisasScreen';
 
 function App() {
   const openMenu=()=>{
@@ -36,11 +38,11 @@ function App() {
       <h4>Hombres</h4>
       <ul>
         <li>
-          <a href="hombre.html">Pantalones/Jeans</a>
+        <Link to="/pantalones">Pantalones/hombre</Link>
         </li>
 
         <li>
-          <a href="hombre.html">Camisas</a>
+        <Link to="/camisas">Camisas/hombre</Link>
         </li>
 
       </ul>
@@ -73,6 +75,8 @@ function App() {
         <Route path="/" exact={true} component={HomeScreen}/>
         <Route path="/about" component={AboutScreen}/>
         <Route path="/contact" component={ContactScreen}/>
+        <Route path="/pantalones" component={PantaloneScreen}/>
+        <Route path="/camisas" component={CamisasScreen}/>
        
 
         
